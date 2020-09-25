@@ -1,12 +1,12 @@
 'use strict'
 
 import React from 'react'
-import CreateReactClass from 'create-react-class'
+import CreateClass from 'create-react-class'
 
-var title = CreateReactClass({
-    render: function(){
-        return React.createElement('h1', null, 'Título')
+const App = CreateClass({
+    render() {
+        return <div>Aplicação</div>
     }
 })
 
-export default title
+export default App
