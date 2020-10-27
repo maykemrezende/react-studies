@@ -1,12 +1,20 @@
 'use strict'
 
-import React from 'react'
-import CreateClass from 'create-react-class'
+import React, { Component } from 'react'
+import Title from './title'
+import Square from './square'
 
-const App = CreateClass({
-    render() {
-        return <div>Aplicação</div>
-    }
-})
+ class App extends Component {
+     render(){
+         return (
+            <div className='container'>
+                {/* <Title name='Mayke' lastname='Rezende' /> */}
+                {['blue', 'red', 'green'].map((square) => (                    
+                    <Square key={square} color={square}></Square>
+                ))}
+            </div>
+         )
+     }
+ }
 
 export default App
